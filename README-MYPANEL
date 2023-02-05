@@ -1,0 +1,23 @@
+Jangan hapus file run.js, jika ingin mengganti startup command, cukup ganti saja jangan hapus run.js
+
+#RUN BOT
+ketik seperti di termux, tetapi semua sudah terinstal, jadi kalian hanya perlu ketik untuk run bot
+contoh: npm i, node index, pm2 
+jika malas ngetik, ganti saja startup command npm start
+
+#RUN WEB
+Pastikan sudah mempunyai domain, dan sudah terdaftar di cloudflare
+
++ LOGIN CLOUDFLARE
+cloudflared tunnel login (klik url yang muncul "argotunnel", pilih domain anda dan klik autorized)
+
++ ATUR TUNNEL
+cloudflared tunnel create namatunnel
+
++ RECORD CNAME
+cloudflared tunnel route dns namatunnel namadomain.com
+
++ START WEB
+cloudflared tunnel run --url http://localhost:port namatunnel
+port sesuai dengan server kalian, 
+letak nya di sebelah MY PANEL:port cukup kalian ketik port nya saja
