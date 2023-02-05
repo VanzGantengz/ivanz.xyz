@@ -21,3 +21,8 @@ cloudflared tunnel route dns namatunnel namadomain.com
 cloudflared tunnel run --url http://localhost:port namatunnel
 port sesuai dengan server kalian, 
 letak nya di sebelah MY PANEL:port cukup kalian ketik port nya saja
+
+GW SARANIN KALIAN PAKAI DOCKER node:latest
+karena yang lain kadang belum gw update,
+yg terupdate yg latest, sekian makasih dh order panel gw.
+moga nyaman yaa.
